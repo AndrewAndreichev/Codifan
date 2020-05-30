@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/Style.css" />
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Codifan Inspire Me &#9829</h1>
+        <p>
+            <i>
+                Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.It has survived not only
+                five centuries, but also the leap into electronic typesetting, remaining
+                essentially unchanged. It was popularised in the 1960s with the release of
+                Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+            </i>
+        </p>
+    </header>
+
+    <nav>
+        <a href="/index_6.html">На главную</a>
+        <a href="/pages/interesting_facts.html">Интересные факты</a>
+        <a href="/pages/address.html">Адрес</a>
+        <a href="/pages/form.html">Заполните форму</a>
+        <a href="/pages/audio.html">Музыкальная шкатулка</a>
+
+    </nav>
+    <section>
+        <div style="text-align:center">
+            <h1>"Форма с личными данными &#x2663"</h1>
+            <canvas id="myCanvas" width="300" height="80" style="border:2px solid #a7a3a3;"></canvas>
+         </div>
+        <br />
+        <br />
+
+        <h2 style="display:inline"> Нажмите, чтобы вернуться </h2>
+        <a href="/index_6.html">
+            <svg width="50" height="50">
+                <circle cx="25" cy="25" r="20" stroke="green" stroke-width="4px" fill="yellow" />
+            </svg>
+        </a>
+        <br />
+        <br />
+
+        <form action="http://wwww.example.com" method="get">
+            Имя:<br>
+            <input type="text" name="Имя">
+            <br>
+            Фамилия:<br>
+            <input type="text" name="Фамилия">
+            <br>
+            Дата рождения:<br>
+            <input type="date" name="Дата рождения"><br>
+            Страна проживания:<br>
+            <select name="страна" multiple size="3">
+                <option value="1">Республика Молдова</option>
+                <option value="2" selected>Румыния</option>
+                <option value="3">Украина</option>
+            </select><br>
+    
+        <br>
+      
+            Интересы:<br>
+            <input type="checkbox" name="Веб дизайн" value="HTML"> HTML <br>
+            <input type="checkbox" name="Веб дизайн" value="Javascript"> Javascript <br>
+            <input type="checkbox" name="Веб дизайн" value="PHP"> PHP <br>
+            <input type="checkbox" name="Веб дизайн" value="CSS"> CSS <br>
+        
+        <br>
+        
+            E-mail:<br>
+            <input type="text" name="email">
+            <br>
+            Пароль:<br>
+            <input type="password" name="psw">
+            <br>
+        
+        <br>
+        
+            Как часто хотите получать уведомления на электронную почту?<br>
+            <input type="radio" name="member" value="Интересы"> Интересы <br>
+            <input type="radio" name="member" value="Ежемесячно"> Ежемесячно <br>
+            <input type="radio" name="member" value="Никогда"> Никогда <br>
+       
+        <br>
+        
+        <textarea name="my_text" rows="8" cols="50"> </textarea> <br>
+        <br>
+        <input type="submit" name="отправить"><br>
+        </form>
+
+
+    </section>
+    <footer><h3 id="demo" style="text-align:center"></h3></footer>
+
+    <script>
+        document.getElementById("demo").innerHTML = "&copy Знання створюють ваше майбутне!";
+
+        //document.getElementById("demo").innerHTML = "Hello, Andrew";
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello World", 70, 50);
+    </script>
+       
+</body>
+
+</html>
